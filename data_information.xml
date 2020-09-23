@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<data>
+    <job name="ETH">
+        <path name="/home/advaith/Documents/SocialNavEval/data/eth/train"/>
+        <single_file value="True"/>
+        <data_format name="ETH"/>
+        <evaluation_metrics>
+            <metric name="CollisionsPerAgent"/>
+            <metric name="ExtraTimeToGoal"/>
+            <metric name="NumberAgentsReachedGoal"/>
+        </evaluation_metrics>
+    </job>
+</data>
