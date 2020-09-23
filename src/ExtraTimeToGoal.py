@@ -33,14 +33,14 @@ class ExtraTimeToGoal(EvaluationMetric):
 
     def set_extra_time_to_goal(self, agent_id):
         agent = self.agents[agent_id]
-        agent_path_time = agent.get_latest_trajectory_time()         #actual time
-        straight_path_time = agent.get_latest_straight_path_time()  #nominal time  #caculate (goal - start) / nominal speed
+        agent_path_time = agent.get_latest_trajectory_time()        
+        straight_path_time = agent.get_latest_straight_path_time() 
         extra_time = agent_path_time - straight_path_time
         self.extra_time_to_goal_dict[agent_id] = extra_time
 
-        ideal_straight_path_time = agent.get_latest_straight_path_time() #use(1) nominal time if it follows 1 m/s speed setting (especially in population)
+        ideal_straight_path_time = agent.get_latest_straight_path_time() 
 
-        self.time_efficiency_dict[agent_id] = ideal_straight_path_time /  (agent_path_time+0.0000001) #latest nominal time / latest actual time   
+        self.time_efficiency_dict[agent_id] = ideal_straight_path_time /  (agent_path_time+0.0000001) 
 
     def set_path_efficiency(self, agent_id):
         path_efficiency = self.agents[agent_id].get_path_efficiency()
