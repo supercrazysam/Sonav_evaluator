@@ -35,7 +35,7 @@ class CongestionScore(EvaluationMetric):
         std_dev_under_congestion = np.std(self.percentage_under_congestion)
         min_under_congestion = np.min(self.percentage_under_congestion)
         max_under_congestion = np.max(self.percentage_under_congestion)
-        return {'Mean Congestion Score @ %f m/s' % self.average_speed_threshold: self.percentage_slower * 100.0 }#
+        return {'Mean Congestion Score @ %f m/s' % self.average_speed_threshold: self.percentage_slower  }# remove *100
     
         '''     {'Percentage of Agents Average Speeds Slower than %f m/s' % self.average_speed_threshold: self.percentage_slower * 100.0 },
                 'Mean Percentage of Time Congested below %f m/s' % self.average_speed_threshold: mean_under_congestion * 100,
