@@ -235,9 +235,9 @@ class Evaluator():
         print(data_dict)
 
 def main():
-    ######### remember to set ExtraTimetoGoal agent.get_latest_straight_path_time()
-    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"] #["SLSTM", "SPEC"]#["SOCIALFORCE", "CVM"] #["CADRL","RVO","LINEAR","SOCIALFORCE","SPEC"]#["SOCIALFORCE","REAL"] #["GA3CCADRL","CADRL","RVO","RAW"] #["RAW"]#
-    dataset_list   = ["ETH","HOTEL","UNIV","ZARA1","ZARA2"]#["ETH","UNIV"]#["ETH","HOTEL","UNIV","ZARA1","ZARA2"]#[0.4,0.45,0.5]#[0.1,0.15,0.2,0.25,0.3,0.35]#
+    ######### Experiment Set 2
+    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"] #add "Real" if also do experiment 1  =>["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC","REAL"]
+    dataset_list   = ["ETH","HOTEL","UNIV","ZARA1","ZARA2"]
     for dataset in dataset_list:
         for algorithm in algorithm_list:
             evaluator = None
@@ -253,17 +253,17 @@ def main():
                 evaluator.overall_summary_name = str(dataset)+"_"+str(algorithm)
             evaluator.evaluate_data()
     
-    ######### remember to set ExtraTimetoGoal agent.get_latest_straight_path_time(1)
-##    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"]#["CVM","SLSTM","SPEC","SOCIALFORCE"] #["CADRL","RVO","LINEAR","SOCIALFORCE"]#["CVM","CADRL","RVO","LINEAR","SLSTM", "SPEC","SOCIALFORCE"]#["CADRL","RVO","LINEAR"]#["GA3CCADRL","CADRL","RVO"]
-##    population_list = [0.5]#[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0] #[0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5]#[0.4,0.45,0.5]#[0.1,0.15,0.2,0.25,0.3,0.35]#
-##    for population in population_list:
-##        for algorithm in algorithm_list:
-##            evaluator = None
-##            
-##            evaluator = Evaluator('Eval',"datasets/"+str(algorithm)+"/exp2_"+str(population)+"_"+str(algorithm), dataset_format="SIM")
-##            evaluator.dataset_format = "SIM" #0.1 per step
-##            evaluator.overall_summary_name = "PD="+str(population)
-##            evaluator.evaluate_data()
+    ######### Experiment Set 3
+    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"]
+    population_list = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0] 
+    for population in population_list:
+        for algorithm in algorithm_list:
+            evaluator = None
+            
+            evaluator = Evaluator('Eval',"datasets/"+str(algorithm)+"/exp2_"+str(population)+"_"+str(algorithm), dataset_format="SIM")
+            evaluator.dataset_format = "SIM" #0.1 per step
+            evaluator.overall_summary_name = "PD="+str(population)
+            evaluator.evaluate_data()
     
     #######
 
