@@ -1,0 +1,60 @@
+number of agents: 12
+steps: 63
+***************Arrival=
+12
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+Agent 2 ARRIVED
+Agent 3 ARRIVED
+Agent 4 ARRIVED
+Agent 5 ARRIVED
+Agent 6 ARRIVED
+Agent 7 ARRIVED
+Agent 8 ARRIVED
+Agent 9 ARRIVED
+Agent 10 ARRIVED
+Agent 11 ARRIVED
+times_to_goal
+Agent 0 6.299999999999994
+Agent 1 6.299999999999994
+Agent 2 6.299999999999994
+Agent 3 6.299999999999994
+Agent 4 6.299999999999994
+Agent 5 6.299999999999994
+Agent 6 6.299999999999994
+Agent 7 6.299999999999994
+Agent 8 6.299999999999994
+Agent 9 6.299999999999994
+Agent 10 6.299999999999994
+Agent 11 6.299999999999994
+extra_time_to_goal
+Agent 0 2.9896997840388773
+Agent 1 1.29400628115555
+Agent 2 1.4842647962992288
+Agent 3 2.325244348386942
+Agent 4 2.2467371064797748
+Agent 5 3.7611845450876253
+Agent 6 3.030394582682794
+Agent 7 2.6756616184501856
+Agent 8 2.096390925720245
+Agent 9 3.0155464177243383
+Agent 10 1.8187184811139119
+Agent 11 1.8720478573224577
+Policies
+Agent 0 running CADRL
+Agent 1 running CADRL
+Agent 2 running CADRL
+Agent 3 running CADRL
+Agent 4 running CADRL
+Agent 5 running CADRL
+Agent 6 running CADRL
+Agent 7 running CADRL
+Agent 8 running CADRL
+Agent 9 running CADRL
+Agent 10 running CADRL
+Agent 11 running CADRL

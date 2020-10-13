@@ -1,0 +1,224 @@
+number of agents: 53
+steps: 450
+***************Arrival=
+4
+Collision=
+49
+Timeout=
+0
+***************STATUS during the end
+Agent 0 COLLISION
+Agent 1 COLLISION
+Agent 2 COLLISION
+Agent 3 COLLISION
+Agent 4 COLLISION
+Agent 5 COLLISION
+Agent 6 COLLISION
+Agent 7 COLLISION
+Agent 8 COLLISION
+Agent 9 COLLISION
+Agent 10 COLLISION
+Agent 11 COLLISION
+Agent 12 ARRIVED
+Agent 13 COLLISION
+Agent 14 COLLISION
+Agent 15 COLLISION
+Agent 16 ARRIVED
+Agent 17 COLLISION
+Agent 18 COLLISION
+Agent 19 COLLISION
+Agent 20 COLLISION
+Agent 21 COLLISION
+Agent 22 COLLISION
+Agent 23 COLLISION
+Agent 24 COLLISION
+Agent 25 COLLISION
+Agent 26 COLLISION
+Agent 27 COLLISION
+Agent 28 COLLISION
+Agent 29 COLLISION
+Agent 30 COLLISION
+Agent 31 COLLISION
+Agent 32 COLLISION
+Agent 33 COLLISION
+Agent 34 COLLISION
+Agent 35 COLLISION
+Agent 36 COLLISION
+Agent 37 COLLISION
+Agent 38 COLLISION
+Agent 39 COLLISION
+Agent 40 COLLISION
+Agent 41 COLLISION
+Agent 42 COLLISION
+Agent 43 COLLISION
+Agent 44 COLLISION
+Agent 45 ARRIVED
+Agent 46 COLLISION
+Agent 47 COLLISION
+Agent 48 COLLISION
+Agent 49 COLLISION
+Agent 50 COLLISION
+Agent 51 COLLISION
+Agent 52 ARRIVED
+times_to_goal
+Agent 0 45.00000000000037
+Agent 1 45.00000000000037
+Agent 2 45.00000000000037
+Agent 3 45.00000000000037
+Agent 4 45.00000000000037
+Agent 5 45.00000000000037
+Agent 6 45.00000000000037
+Agent 7 45.00000000000037
+Agent 8 45.00000000000037
+Agent 9 45.00000000000037
+Agent 10 45.00000000000037
+Agent 11 45.00000000000037
+Agent 12 45.00000000000037
+Agent 13 45.00000000000037
+Agent 14 45.00000000000037
+Agent 15 45.00000000000037
+Agent 16 45.00000000000037
+Agent 17 45.00000000000037
+Agent 18 45.00000000000037
+Agent 19 45.00000000000037
+Agent 20 45.00000000000037
+Agent 21 45.00000000000037
+Agent 22 45.00000000000037
+Agent 23 45.00000000000037
+Agent 24 45.00000000000037
+Agent 25 45.00000000000037
+Agent 26 45.00000000000037
+Agent 27 45.00000000000037
+Agent 28 45.00000000000037
+Agent 29 45.00000000000037
+Agent 30 45.00000000000037
+Agent 31 45.00000000000037
+Agent 32 45.00000000000037
+Agent 33 45.00000000000037
+Agent 34 45.00000000000037
+Agent 35 45.00000000000037
+Agent 36 45.00000000000037
+Agent 37 45.00000000000037
+Agent 38 45.00000000000037
+Agent 39 45.00000000000037
+Agent 40 45.00000000000037
+Agent 41 45.00000000000037
+Agent 42 45.00000000000037
+Agent 43 45.00000000000037
+Agent 44 45.00000000000037
+Agent 45 45.00000000000037
+Agent 46 45.00000000000037
+Agent 47 45.00000000000037
+Agent 48 45.00000000000037
+Agent 49 45.00000000000037
+Agent 50 45.00000000000037
+Agent 51 45.00000000000037
+Agent 52 45.00000000000037
+extra_time_to_goal
+Agent 0 31.726856612880518
+Agent 1 38.37966851360068
+Agent 2 18.923054348845092
+Agent 3 19.30430209430055
+Agent 4 30.785388088602726
+Agent 5 22.53160455470494
+Agent 6 12.405988369853752
+Agent 7 8.79727668395109
+Agent 8 31.992305068456183
+Agent 9 31.331657840715053
+Agent 10 29.292929053926613
+Agent 11 16.683376421442986
+Agent 12 5.279143378509914
+Agent 13 18.78970342417223
+Agent 14 21.538597836878953
+Agent 15 20.529506443359292
+Agent 16 27.528234714272635
+Agent 17 20.001558367610954
+Agent 18 17.798123772145253
+Agent 19 29.327215708243358
+Agent 20 22.586958440277172
+Agent 21 30.58094394461287
+Agent 22 21.806702379971977
+Agent 23 17.48988380362377
+Agent 24 27.985400298137588
+Agent 25 14.069770648166532
+Agent 26 26.529780994129734
+Agent 27 20.1560036713115
+Agent 28 26.46921783605005
+Agent 29 26.649540247371313
+Agent 30 6.959943918775274
+Agent 31 38.16619882954475
+Agent 32 26.41158006360444
+Agent 33 34.70564667694148
+Agent 34 32.32360480807322
+Agent 35 7.525026639002597
+Agent 36 0.7529016425735122
+Agent 37 17.039511485850696
+Agent 38 24.396301596212947
+Agent 39 22.548258709279605
+Agent 40 9.848419343197243
+Agent 41 31.045230017910463
+Agent 42 -25.09537759777021
+Agent 43 2.3653727567175764
+Agent 44 18.5661035641136
+Agent 45 0.05423157919870647
+Agent 46 19.376202029207672
+Agent 47 33.41731892921252
+Agent 48 26.084016823346015
+Agent 49 22.62318150818423
+Agent 50 27.8182789842695
+Agent 51 22.576705373076898
+Agent 52 11.116365194854097
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy
+Agent 2 running NonCooperativePolicy
+Agent 3 running NonCooperativePolicy
+Agent 4 running NonCooperativePolicy
+Agent 5 running NonCooperativePolicy
+Agent 6 running NonCooperativePolicy
+Agent 7 running NonCooperativePolicy
+Agent 8 running NonCooperativePolicy
+Agent 9 running NonCooperativePolicy
+Agent 10 running NonCooperativePolicy
+Agent 11 running NonCooperativePolicy
+Agent 12 running NonCooperativePolicy
+Agent 13 running NonCooperativePolicy
+Agent 14 running NonCooperativePolicy
+Agent 15 running NonCooperativePolicy
+Agent 16 running NonCooperativePolicy
+Agent 17 running NonCooperativePolicy
+Agent 18 running NonCooperativePolicy
+Agent 19 running NonCooperativePolicy
+Agent 20 running NonCooperativePolicy
+Agent 21 running NonCooperativePolicy
+Agent 22 running NonCooperativePolicy
+Agent 23 running NonCooperativePolicy
+Agent 24 running NonCooperativePolicy
+Agent 25 running NonCooperativePolicy
+Agent 26 running NonCooperativePolicy
+Agent 27 running NonCooperativePolicy
+Agent 28 running NonCooperativePolicy
+Agent 29 running NonCooperativePolicy
+Agent 30 running NonCooperativePolicy
+Agent 31 running NonCooperativePolicy
+Agent 32 running NonCooperativePolicy
+Agent 33 running NonCooperativePolicy
+Agent 34 running NonCooperativePolicy
+Agent 35 running NonCooperativePolicy
+Agent 36 running NonCooperativePolicy
+Agent 37 running NonCooperativePolicy
+Agent 38 running NonCooperativePolicy
+Agent 39 running NonCooperativePolicy
+Agent 40 running NonCooperativePolicy
+Agent 41 running NonCooperativePolicy
+Agent 42 running NonCooperativePolicy
+Agent 43 running NonCooperativePolicy
+Agent 44 running NonCooperativePolicy
+Agent 45 running NonCooperativePolicy
+Agent 46 running NonCooperativePolicy
+Agent 47 running NonCooperativePolicy
+Agent 48 running NonCooperativePolicy
+Agent 49 running NonCooperativePolicy
+Agent 50 running NonCooperativePolicy
+Agent 51 running NonCooperativePolicy
+Agent 52 running NonCooperativePolicy

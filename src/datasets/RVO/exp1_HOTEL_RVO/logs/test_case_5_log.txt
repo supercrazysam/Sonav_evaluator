@@ -1,0 +1,24 @@
+number of agents: 3
+steps: 130
+***************Arrival=
+3
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+Agent 2 ARRIVED
+times_to_goal
+Agent 0 12.99999999999997
+Agent 1 12.99999999999997
+Agent 2 12.99999999999997
+extra_time_to_goal
+Agent 0 9.703285215107893
+Agent 1 7.522457681288955
+Agent 2 0.13709408793054223
+Policies
+Agent 0 running RVO
+Agent 1 running RVO
+Agent 2 running RVO

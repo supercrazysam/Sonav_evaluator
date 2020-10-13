@@ -1,0 +1,188 @@
+number of agents: 44
+steps: 612
+***************Arrival=
+11
+Collision=
+33
+Timeout=
+0
+***************STATUS during the end
+Agent 0 COLLISION
+Agent 1 COLLISION
+Agent 2 COLLISION
+Agent 3 ARRIVED
+Agent 4 ARRIVED
+Agent 5 COLLISION
+Agent 6 ARRIVED
+Agent 7 ARRIVED
+Agent 8 COLLISION
+Agent 9 COLLISION
+Agent 10 COLLISION
+Agent 11 COLLISION
+Agent 12 COLLISION
+Agent 13 COLLISION
+Agent 14 ARRIVED
+Agent 15 COLLISION
+Agent 16 COLLISION
+Agent 17 COLLISION
+Agent 18 COLLISION
+Agent 19 COLLISION
+Agent 20 COLLISION
+Agent 21 COLLISION
+Agent 22 COLLISION
+Agent 23 COLLISION
+Agent 24 COLLISION
+Agent 25 COLLISION
+Agent 26 COLLISION
+Agent 27 COLLISION
+Agent 28 COLLISION
+Agent 29 COLLISION
+Agent 30 ARRIVED
+Agent 31 COLLISION
+Agent 32 ARRIVED
+Agent 33 COLLISION
+Agent 34 COLLISION
+Agent 35 COLLISION
+Agent 36 ARRIVED
+Agent 37 COLLISION
+Agent 38 COLLISION
+Agent 39 ARRIVED
+Agent 40 ARRIVED
+Agent 41 COLLISION
+Agent 42 ARRIVED
+Agent 43 COLLISION
+times_to_goal
+Agent 0 61.2000000000006
+Agent 1 61.2000000000006
+Agent 2 61.2000000000006
+Agent 3 61.2000000000006
+Agent 4 61.2000000000006
+Agent 5 61.2000000000006
+Agent 6 61.2000000000006
+Agent 7 61.2000000000006
+Agent 8 61.2000000000006
+Agent 9 61.2000000000006
+Agent 10 61.2000000000006
+Agent 11 61.2000000000006
+Agent 12 61.2000000000006
+Agent 13 61.2000000000006
+Agent 14 61.2000000000006
+Agent 15 61.2000000000006
+Agent 16 61.2000000000006
+Agent 17 61.2000000000006
+Agent 18 61.2000000000006
+Agent 19 61.2000000000006
+Agent 20 61.2000000000006
+Agent 21 61.2000000000006
+Agent 22 61.2000000000006
+Agent 23 61.2000000000006
+Agent 24 61.2000000000006
+Agent 25 61.2000000000006
+Agent 26 61.2000000000006
+Agent 27 61.2000000000006
+Agent 28 61.2000000000006
+Agent 29 61.2000000000006
+Agent 30 61.2000000000006
+Agent 31 61.2000000000006
+Agent 32 61.2000000000006
+Agent 33 61.2000000000006
+Agent 34 61.2000000000006
+Agent 35 61.2000000000006
+Agent 36 61.2000000000006
+Agent 37 61.2000000000006
+Agent 38 61.2000000000006
+Agent 39 61.2000000000006
+Agent 40 61.2000000000006
+Agent 41 61.2000000000006
+Agent 42 61.2000000000006
+Agent 43 61.2000000000006
+extra_time_to_goal
+Agent 0 49.3352813340733
+Agent 1 24.242778773904014
+Agent 2 50.535226030293856
+Agent 3 45.593395359677835
+Agent 4 39.64124712424905
+Agent 5 38.29215536038636
+Agent 6 52.28526652429092
+Agent 7 56.86132470622453
+Agent 8 45.5377566689518
+Agent 9 46.23098745699173
+Agent 10 39.71638522552545
+Agent 11 40.2515165900914
+Agent 12 45.639012074053156
+Agent 13 24.534624748528707
+Agent 14 41.95334521136905
+Agent 15 21.27626667671408
+Agent 16 42.49777903070195
+Agent 17 34.38571148448925
+Agent 18 41.472456198382915
+Agent 19 31.06054617088433
+Agent 20 21.8026956983637
+Agent 21 37.14686863366309
+Agent 22 46.050600942447616
+Agent 23 50.80144125639762
+Agent 24 28.369074822569225
+Agent 25 42.09321637063058
+Agent 26 43.4597571759316
+Agent 27 36.79901975078803
+Agent 28 32.323487600214584
+Agent 29 53.083919754177316
+Agent 30 37.807260891913124
+Agent 31 46.365153644089844
+Agent 32 25.456368901388075
+Agent 33 30.67370713370553
+Agent 34 32.908036379806056
+Agent 35 44.4104550445347
+Agent 36 42.63421142486473
+Agent 37 52.427497142701036
+Agent 38 3.641794434019978
+Agent 39 37.76207417081329
+Agent 40 0.03319467244099883
+Agent 41 44.05706695235626
+Agent 42 50.26898947617036
+Agent 43 40.605475706103455
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy
+Agent 2 running NonCooperativePolicy
+Agent 3 running NonCooperativePolicy
+Agent 4 running NonCooperativePolicy
+Agent 5 running NonCooperativePolicy
+Agent 6 running NonCooperativePolicy
+Agent 7 running NonCooperativePolicy
+Agent 8 running NonCooperativePolicy
+Agent 9 running NonCooperativePolicy
+Agent 10 running NonCooperativePolicy
+Agent 11 running NonCooperativePolicy
+Agent 12 running NonCooperativePolicy
+Agent 13 running NonCooperativePolicy
+Agent 14 running NonCooperativePolicy
+Agent 15 running NonCooperativePolicy
+Agent 16 running NonCooperativePolicy
+Agent 17 running NonCooperativePolicy
+Agent 18 running NonCooperativePolicy
+Agent 19 running NonCooperativePolicy
+Agent 20 running NonCooperativePolicy
+Agent 21 running NonCooperativePolicy
+Agent 22 running NonCooperativePolicy
+Agent 23 running NonCooperativePolicy
+Agent 24 running NonCooperativePolicy
+Agent 25 running NonCooperativePolicy
+Agent 26 running NonCooperativePolicy
+Agent 27 running NonCooperativePolicy
+Agent 28 running NonCooperativePolicy
+Agent 29 running NonCooperativePolicy
+Agent 30 running NonCooperativePolicy
+Agent 31 running NonCooperativePolicy
+Agent 32 running NonCooperativePolicy
+Agent 33 running NonCooperativePolicy
+Agent 34 running NonCooperativePolicy
+Agent 35 running NonCooperativePolicy
+Agent 36 running NonCooperativePolicy
+Agent 37 running NonCooperativePolicy
+Agent 38 running NonCooperativePolicy
+Agent 39 running NonCooperativePolicy
+Agent 40 running NonCooperativePolicy
+Agent 41 running NonCooperativePolicy
+Agent 42 running NonCooperativePolicy
+Agent 43 running NonCooperativePolicy

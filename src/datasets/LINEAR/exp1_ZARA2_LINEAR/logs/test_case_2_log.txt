@@ -1,0 +1,76 @@
+number of agents: 16
+steps: 256
+***************Arrival=
+6
+Collision=
+10
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 COLLISION
+Agent 2 ARRIVED
+Agent 3 ARRIVED
+Agent 4 COLLISION
+Agent 5 COLLISION
+Agent 6 COLLISION
+Agent 7 COLLISION
+Agent 8 COLLISION
+Agent 9 ARRIVED
+Agent 10 ARRIVED
+Agent 11 COLLISION
+Agent 12 COLLISION
+Agent 13 COLLISION
+Agent 14 COLLISION
+Agent 15 ARRIVED
+times_to_goal
+Agent 0 25.600000000000094
+Agent 1 25.600000000000094
+Agent 2 25.600000000000094
+Agent 3 25.600000000000094
+Agent 4 25.600000000000094
+Agent 5 25.600000000000094
+Agent 6 25.600000000000094
+Agent 7 25.600000000000094
+Agent 8 25.600000000000094
+Agent 9 25.600000000000094
+Agent 10 25.600000000000094
+Agent 11 25.600000000000094
+Agent 12 25.600000000000094
+Agent 13 25.600000000000094
+Agent 14 25.600000000000094
+Agent 15 25.600000000000094
+extra_time_to_goal
+Agent 0 0.034476869322642045
+Agent 1 8.074969634776785
+Agent 2 14.794271546691078
+Agent 3 8.92085907673961
+Agent 4 4.262639537831955
+Agent 5 9.985666869306062
+Agent 6 10.91273504693068
+Agent 7 15.417575357145463
+Agent 8 11.761313766255853
+Agent 9 20.543528048563644
+Agent 10 16.902599768055502
+Agent 11 14.736813225464791
+Agent 12 7.897765145818255
+Agent 13 6.711736435562411
+Agent 14 16.554356887488545
+Agent 15 17.002517551392096
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy
+Agent 2 running NonCooperativePolicy
+Agent 3 running NonCooperativePolicy
+Agent 4 running NonCooperativePolicy
+Agent 5 running NonCooperativePolicy
+Agent 6 running NonCooperativePolicy
+Agent 7 running NonCooperativePolicy
+Agent 8 running NonCooperativePolicy
+Agent 9 running NonCooperativePolicy
+Agent 10 running NonCooperativePolicy
+Agent 11 running NonCooperativePolicy
+Agent 12 running NonCooperativePolicy
+Agent 13 running NonCooperativePolicy
+Agent 14 running NonCooperativePolicy
+Agent 15 running NonCooperativePolicy

@@ -35,6 +35,7 @@ class AgentClosestProximity(EvaluationMetric):
         max_proximities = [self.furthest_proximity_per_agent[agent_id] for agent_id in self.furthest_proximity_per_agent]
         agents = list(self.closest_proximity_per_agent)
 
+
         self.average_min_proximity = np.mean(min_proximities)
         self.std_dev_min_proximity = np.std(min_proximities)
         closest_proximity_ind = np.argmin(min_proximities)
@@ -53,20 +54,17 @@ class AgentClosestProximity(EvaluationMetric):
         self.update_agents(agents)
         self.get_closest_proximity_to_agent()
         return {'Mean Closest Proximity (m)': self.average_min_proximity,
-                'StdDev Closest Proximity (m)': self.std_dev_min_proximity} #
-
-        ''',
-                'StdDev Closest Proximity (m)': self.std_dev_min_proximity,
                 'Closest Proximity (m)': self.closest_proximity,
                 'Closest Proximity Agent_ID': self.closest_proximity_ind,
-                'Mean Closest Proximity (m)_Scatter': self.closest_proximity_per_agent,
+                #'Mean Closest Proximity (m)_Scatter': self.closest_proximity_per_agent,
                 'Mean Furthest Proximity (m)': self.average_max_proximity,
                 'StdDev Furthest Proximity (m)': self.std_dev_max_proximity,
                 'Furthest Proximity (m)': self.furthest_proximity,
-                'Furthest Proximity Agent_ID': self.furthest_proximity_ind,
-                'Mean Furthest Proximity (m)_Scatter': self.furthest_proximity_per_agent}
+                'Furthest Proximity Agent_ID': self.furthest_proximity_ind}
+                #'Mean Furthest Proximity (m)_Scatter': self.furthest_proximity_per_agent
         '''
                 
             # "[Average Closest Proximity]"  + "\n" + str(self.average_proximity) + " m " + "StdDev: " + str(self.std_dev_proximity) + " m " + "\n" + \
             #   "[Closest Proximity]" + "\n" + str(self.closest_proximity) + "\n" + "[Closest Proximity Agent_ID]" + "\n" + str(self.closet_proximity_ind) + "\n" +\
             #    "[Closest Proximity Per Agent]" + "\n" + str(self.closest_proximity_per_agent) +"\n"
+        '''

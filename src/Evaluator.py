@@ -76,7 +76,7 @@ class Evaluator():
         self.name = name
         self.agents = dict()
         #self.central_data_path = "../results"
-        self.central_data_path = self.batch_search_directory = "datasets/processed_20_full_table/ZARA2/RAW"
+        self.central_data_path = self.batch_search_directory = "datasets/processed_20_population_density/0.3/CADRL"#"datasets/processed_20_full_table/ZARA2/RAW"
         self.batch_data_dict = dict()
         create_batch_data_dict(self.batch_data_dict, self.batch_search_directory)
         self.total_batches = len(self.batch_data_dict.keys())

@@ -69,9 +69,12 @@ class Agent():
             return 0.0
 
     def update_agent_proximity(self, dist):
-        if dist.size == 1: #no other agents to compare to, no proximities to consider
+        if dist.size <= 1: #no other agents to compare to, no proximities to consider
             return
+        
+
         dist = dist[dist >= 0.0]
+        if len(dist)==0 or dist is None: return
         max = np.max(dist)
         min = np.min(dist)
         if min < self.closest_distance_to_other_agent and min >= 0.0:

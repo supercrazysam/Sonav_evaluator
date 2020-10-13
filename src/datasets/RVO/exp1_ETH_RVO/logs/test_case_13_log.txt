@@ -1,0 +1,64 @@
+number of agents: 13
+steps: 444
+***************Arrival=
+13
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+Agent 2 ARRIVED
+Agent 3 ARRIVED
+Agent 4 ARRIVED
+Agent 5 ARRIVED
+Agent 6 ARRIVED
+Agent 7 ARRIVED
+Agent 8 ARRIVED
+Agent 9 ARRIVED
+Agent 10 ARRIVED
+Agent 11 ARRIVED
+Agent 12 ARRIVED
+times_to_goal
+Agent 0 44.40000000000036
+Agent 1 44.40000000000036
+Agent 2 44.40000000000036
+Agent 3 44.40000000000036
+Agent 4 44.40000000000036
+Agent 5 44.40000000000036
+Agent 6 44.40000000000036
+Agent 7 44.40000000000036
+Agent 8 44.40000000000036
+Agent 9 44.40000000000036
+Agent 10 44.40000000000036
+Agent 11 44.40000000000036
+Agent 12 44.40000000000036
+extra_time_to_goal
+Agent 0 37.569407747371166
+Agent 1 40.17923500300301
+Agent 2 37.124173306558006
+Agent 3 35.09319282730399
+Agent 4 35.955108289853825
+Agent 5 31.34100387524917
+Agent 6 38.51701234843985
+Agent 7 40.5418239510717
+Agent 8 38.03253338523771
+Agent 9 29.607178475722915
+Agent 10 38.148149295502996
+Agent 11 39.11893816281649
+Agent 12 27.776988116004894
+Policies
+Agent 0 running RVO
+Agent 1 running RVO
+Agent 2 running RVO
+Agent 3 running RVO
+Agent 4 running RVO
+Agent 5 running RVO
+Agent 6 running RVO
+Agent 7 running RVO
+Agent 8 running RVO
+Agent 9 running RVO
+Agent 10 running RVO
+Agent 11 running RVO
+Agent 12 running RVO

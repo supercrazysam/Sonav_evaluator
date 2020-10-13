@@ -37,7 +37,7 @@ evaluation_metrics_dict = {
 }
 
 # how many timesteps from the beginning to ignore
-ignored_time_steps = 10
+ignored_time_steps = 2
 
 def create_data_dict_from_directory(dir, recursive=False, dataset_format=None):
     data_dict = {}
@@ -121,8 +121,11 @@ class Evaluator():
             print("[Batch %s]: %d / %d" % (batch, ii + 1, self.total_batches))
             data_dict = self.batch_data_dict[batch]
             for job_id, job in enumerate(data_dict):
+
                 self.agents = {}
                 path, format = data_dict[job]['path'], data_dict[job]['data_format']
+                if "log" in path.split("/")[-1]: continue
+
                 data_loader = DataLoader(path, format)
                 data_scale = format_dict[format]['data_type_scale']
                 capture_freq = format_dict[format]['capture_freq']
@@ -153,6 +156,8 @@ class Evaluator():
                     prev_time = curr_time
                 self.write_stats(job_id, job, batch)
                 self.write_batch_stats(batch)
+
+                
             self.df_dict = {}
 
     def add_agent(self, agent):
@@ -177,6 +182,9 @@ class Evaluator():
                 stat_values.append(self.overall_summary_name)  #"Batch Statistics"
             elif "stddev" in col.lower():
                 stat_values.append(np.sqrt(np.sum(np.square(values)))/float(n))
+            #add processing for percentage rate scores
+            elif ("rate" in col.lower()) or ("rate" in col.lower()):
+                stat_values.append(np.mean(values))
             else:
                 stat_values.append(-1)
         stat_value_dict = dict(zip(list(batch_pd), stat_values))
@@ -198,7 +206,21 @@ class Evaluator():
         if not os.path.isdir(self.central_data_path):
             os.makedirs(self.central_data_path)
         for evaluation_metric in self.evaluation_metrics[batch][job_id]:
-            eval_dict = evaluation_metric.write_out(self.agents)
+            #######Override Collision metric to read from simulation's collision result####
+            if type(evaluation_metric) == CollisionsPerAgent:
+##                print("COLLISION override")
+##                print("PATH")
+##                print(self.central_data_path)
+##                print("job")
+##                print(job)
+##                print("job_id")
+##                print(job_id)
+##                print("batch")
+##                print(batch)
+                eval_dict = evaluation_metric.write_out(self.agents, logdir = self.central_data_path+"/logs/"+job+".npz")
+            else:
+                eval_dict = evaluation_metric.write_out(self.agents)
+                
             for metric in eval_dict:
                 if metric not in self.df_dict:
                     self.df_dict[metric] = [eval_dict[metric]]
@@ -214,22 +236,36 @@ class Evaluator():
 
 def main():
     ######### remember to set ExtraTimetoGoal agent.get_latest_straight_path_time()
-    algorithm_list = ["GA3CCADRL","CADRL","RVO","RAW"] #["RAW"]#
-    dataset_list   = ["ETH","HOTEL","UNIV","ZARA1","ZARA2"]#[0.4,0.45,0.5]#[0.1,0.15,0.2,0.25,0.3,0.35]#
+    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"] #["SLSTM", "SPEC"]#["SOCIALFORCE", "CVM"] #["CADRL","RVO","LINEAR","SOCIALFORCE","SPEC"]#["SOCIALFORCE","REAL"] #["GA3CCADRL","CADRL","RVO","RAW"] #["RAW"]#
+    dataset_list   = ["ETH","HOTEL","UNIV","ZARA1","ZARA2"]#["ETH","UNIV"]#["ETH","HOTEL","UNIV","ZARA1","ZARA2"]#[0.4,0.45,0.5]#[0.1,0.15,0.2,0.25,0.3,0.35]#
     for dataset in dataset_list:
         for algorithm in algorithm_list:
             evaluator = None
 
-            if algorithm=="RAW":
-                evaluator = Evaluator('Eval',"datasets/processed_20_full_table/"+str(dataset)+"/"+str(algorithm), dataset_format="ETH")
+            if algorithm=="REAL":
+                evaluator = Evaluator('Eval',"datasets/"+str(algorithm)+"/"+str(dataset), dataset_format="ETH")
             else:
-                evaluator = Evaluator('Eval',"datasets/processed_20_full_table/"+str(dataset)+"/"+str(algorithm), dataset_format="SIM")
+                evaluator = Evaluator('Eval',"datasets/"+str(algorithm)+"/exp1_"+str(dataset)+"_"+str(algorithm), dataset_format="SIM")
 
-            if algorithm=="RAW":     
+            if algorithm=="REAL":     
                 evaluator.overall_summary_name = str(dataset)+"_Real"
             else:
                 evaluator.overall_summary_name = str(dataset)+"_"+str(algorithm)
             evaluator.evaluate_data()
+    
+    ######### remember to set ExtraTimetoGoal agent.get_latest_straight_path_time(1)
+##    algorithm_list = ["CADRL","CVM","RVO","LINEAR","SOCIALFORCE","SLSTM","SPEC"]#["CVM","SLSTM","SPEC","SOCIALFORCE"] #["CADRL","RVO","LINEAR","SOCIALFORCE"]#["CVM","CADRL","RVO","LINEAR","SLSTM", "SPEC","SOCIALFORCE"]#["CADRL","RVO","LINEAR"]#["GA3CCADRL","CADRL","RVO"]
+##    population_list = [0.5]#[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9,1.0] #[0.1,0.15,0.2,0.25,0.3,0.35,0.4,0.45,0.5]#[0.4,0.45,0.5]#[0.1,0.15,0.2,0.25,0.3,0.35]#
+##    for population in population_list:
+##        for algorithm in algorithm_list:
+##            evaluator = None
+##            
+##            evaluator = Evaluator('Eval',"datasets/"+str(algorithm)+"/exp2_"+str(population)+"_"+str(algorithm), dataset_format="SIM")
+##            evaluator.dataset_format = "SIM" #0.1 per step
+##            evaluator.overall_summary_name = "PD="+str(population)
+##            evaluator.evaluate_data()
+    
+    #######
 
     
 

@@ -1,0 +1,140 @@
+number of agents: 32
+steps: 461
+***************Arrival=
+9
+Collision=
+23
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 COLLISION
+Agent 2 COLLISION
+Agent 3 ARRIVED
+Agent 4 COLLISION
+Agent 5 COLLISION
+Agent 6 ARRIVED
+Agent 7 COLLISION
+Agent 8 ARRIVED
+Agent 9 COLLISION
+Agent 10 COLLISION
+Agent 11 COLLISION
+Agent 12 COLLISION
+Agent 13 ARRIVED
+Agent 14 COLLISION
+Agent 15 COLLISION
+Agent 16 COLLISION
+Agent 17 COLLISION
+Agent 18 COLLISION
+Agent 19 COLLISION
+Agent 20 COLLISION
+Agent 21 COLLISION
+Agent 22 COLLISION
+Agent 23 ARRIVED
+Agent 24 COLLISION
+Agent 25 ARRIVED
+Agent 26 ARRIVED
+Agent 27 COLLISION
+Agent 28 COLLISION
+Agent 29 COLLISION
+Agent 30 ARRIVED
+Agent 31 COLLISION
+times_to_goal
+Agent 0 46.100000000000385
+Agent 1 46.100000000000385
+Agent 2 46.100000000000385
+Agent 3 46.100000000000385
+Agent 4 46.100000000000385
+Agent 5 46.100000000000385
+Agent 6 46.100000000000385
+Agent 7 46.100000000000385
+Agent 8 46.100000000000385
+Agent 9 46.100000000000385
+Agent 10 46.100000000000385
+Agent 11 46.100000000000385
+Agent 12 46.100000000000385
+Agent 13 46.100000000000385
+Agent 14 46.100000000000385
+Agent 15 46.100000000000385
+Agent 16 46.100000000000385
+Agent 17 46.100000000000385
+Agent 18 46.100000000000385
+Agent 19 46.100000000000385
+Agent 20 46.100000000000385
+Agent 21 46.100000000000385
+Agent 22 46.100000000000385
+Agent 23 46.100000000000385
+Agent 24 46.100000000000385
+Agent 25 46.100000000000385
+Agent 26 46.100000000000385
+Agent 27 46.100000000000385
+Agent 28 46.100000000000385
+Agent 29 46.100000000000385
+Agent 30 46.100000000000385
+Agent 31 46.100000000000385
+extra_time_to_goal
+Agent 0 41.541768584013816
+Agent 1 24.36276663490129
+Agent 2 13.987852284533531
+Agent 3 12.094107583120646
+Agent 4 -37.16917387901241
+Agent 5 28.212825155435297
+Agent 6 29.813445432981744
+Agent 7 18.936058407754633
+Agent 8 21.737451854800632
+Agent 9 27.98396196624609
+Agent 10 25.41163283345466
+Agent 11 28.814885192925495
+Agent 12 25.095256387412352
+Agent 13 23.204560178589094
+Agent 14 44.77810628259552
+Agent 15 5.584869702128657
+Agent 16 18.86845717416494
+Agent 17 27.451095335345144
+Agent 18 18.01069439534069
+Agent 19 40.34418673350921
+Agent 20 24.61525515304736
+Agent 21 22.474485127734592
+Agent 22 30.616163981137774
+Agent 23 4.351106534624236
+Agent 24 32.45728425823876
+Agent 25 23.563781883328687
+Agent 26 36.49231348094565
+Agent 27 11.184883993672173
+Agent 28 2.2690968849692865
+Agent 29 31.17224937424188
+Agent 30 29.525352274232862
+Agent 31 -14.7101189076497
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy
+Agent 2 running NonCooperativePolicy
+Agent 3 running NonCooperativePolicy
+Agent 4 running NonCooperativePolicy
+Agent 5 running NonCooperativePolicy
+Agent 6 running NonCooperativePolicy
+Agent 7 running NonCooperativePolicy
+Agent 8 running NonCooperativePolicy
+Agent 9 running NonCooperativePolicy
+Agent 10 running NonCooperativePolicy
+Agent 11 running NonCooperativePolicy
+Agent 12 running NonCooperativePolicy
+Agent 13 running NonCooperativePolicy
+Agent 14 running NonCooperativePolicy
+Agent 15 running NonCooperativePolicy
+Agent 16 running NonCooperativePolicy
+Agent 17 running NonCooperativePolicy
+Agent 18 running NonCooperativePolicy
+Agent 19 running NonCooperativePolicy
+Agent 20 running NonCooperativePolicy
+Agent 21 running NonCooperativePolicy
+Agent 22 running NonCooperativePolicy
+Agent 23 running NonCooperativePolicy
+Agent 24 running NonCooperativePolicy
+Agent 25 running NonCooperativePolicy
+Agent 26 running NonCooperativePolicy
+Agent 27 running NonCooperativePolicy
+Agent 28 running NonCooperativePolicy
+Agent 29 running NonCooperativePolicy
+Agent 30 running NonCooperativePolicy
+Agent 31 running NonCooperativePolicy

@@ -1,0 +1,20 @@
+number of agents: 2
+steps: 113
+***************Arrival=
+2
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+times_to_goal
+Agent 0 11.299999999999976
+Agent 1 11.299999999999976
+extra_time_to_goal
+Agent 0 1.9607995623547847
+Agent 1 8.448425181316459
+Policies
+Agent 0 running SOCIALFORCE
+Agent 1 running SOCIALFORCE

@@ -1,0 +1,32 @@
+number of agents: 5
+steps: 46
+***************Arrival=
+2
+Collision=
+3
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 COLLISION
+Agent 2 COLLISION
+Agent 3 COLLISION
+Agent 4 ARRIVED
+times_to_goal
+Agent 0 4.6
+Agent 1 4.6
+Agent 2 4.6
+Agent 3 4.6
+Agent 4 4.6
+extra_time_to_goal
+Agent 0 -0.056703042585393604
+Agent 1 -0.4949894519435212
+Agent 2 0.9273322613019084
+Agent 3 1.152459614465521
+Agent 4 0.43146865996317096
+Policies
+Agent 0 running SPEC
+Agent 1 running SPEC
+Agent 2 running SPEC
+Agent 3 running SPEC
+Agent 4 running SPEC

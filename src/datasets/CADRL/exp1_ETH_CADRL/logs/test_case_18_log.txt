@@ -1,0 +1,24 @@
+number of agents: 3
+steps: 183
+***************Arrival=
+3
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+Agent 2 ARRIVED
+times_to_goal
+Agent 0 18.29999999999999
+Agent 1 18.29999999999999
+Agent 2 18.29999999999999
+extra_time_to_goal
+Agent 0 6.606623430890801
+Agent 1 1.5862036141657718
+Agent 2 1.0940419678409725
+Policies
+Agent 0 running CADRL
+Agent 1 running CADRL
+Agent 2 running CADRL

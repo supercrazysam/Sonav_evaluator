@@ -1,0 +1,20 @@
+number of agents: 2
+steps: 676
+***************Arrival=
+2
+Collision=
+0
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 ARRIVED
+times_to_goal
+Agent 0 67.60000000000043
+Agent 1 67.60000000000043
+extra_time_to_goal
+Agent 0 60.08062138158176
+Agent 1 0.05173233407033706
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy

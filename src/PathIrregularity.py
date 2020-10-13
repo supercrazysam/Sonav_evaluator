@@ -38,7 +38,9 @@ class PathIrregularity(EvaluationMetric):
         min_irregularity = np.min(irregularity_list)
         
         return {'Mean Path Irregularity (degrees/m)': average_irregularity,
-                'StdDev Path Irregularity (degrees/m)': std_dev_irregularity}
+                'StdDev Path Irregularity (degrees/m)': std_dev_irregularity,
+                'Max Path Irregularity (degrees/m)': max_irregularity,
+                'Min Path Irregularity (degrees/m)': min_irregularity  }
     
                 #{'Mean Path Irregularity (radians/m)': average_irregularity },
                 #'StdDev Path Irregularity (radians/m)': std_dev_irregularity,

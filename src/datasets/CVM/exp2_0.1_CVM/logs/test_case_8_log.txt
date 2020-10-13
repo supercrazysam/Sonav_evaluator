@@ -1,0 +1,20 @@
+number of agents: 2
+steps: 19
+***************Arrival=
+0
+Collision=
+2
+Timeout=
+0
+***************STATUS during the end
+Agent 0 COLLISION
+Agent 1 COLLISION
+times_to_goal
+Agent 0 1.9000000000000006
+Agent 1 1.9000000000000006
+extra_time_to_goal
+Agent 0 -0.875884845318377
+Agent 1 -2.1894627574575996
+Policies
+Agent 0 running CVM
+Agent 1 running CVM

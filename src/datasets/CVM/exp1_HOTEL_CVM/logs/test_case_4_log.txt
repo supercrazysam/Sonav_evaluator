@@ -1,0 +1,48 @@
+number of agents: 9
+steps: 122
+***************Arrival=
+6
+Collision=
+3
+Timeout=
+0
+***************STATUS during the end
+Agent 0 ARRIVED
+Agent 1 COLLISION
+Agent 2 ARRIVED
+Agent 3 ARRIVED
+Agent 4 ARRIVED
+Agent 5 COLLISION
+Agent 6 COLLISION
+Agent 7 ARRIVED
+Agent 8 ARRIVED
+times_to_goal
+Agent 0 12.199999999999973
+Agent 1 12.199999999999973
+Agent 2 12.199999999999973
+Agent 3 12.199999999999973
+Agent 4 12.199999999999973
+Agent 5 12.199999999999973
+Agent 6 12.199999999999973
+Agent 7 12.199999999999973
+Agent 8 12.199999999999973
+extra_time_to_goal
+Agent 0 8.032151192036785
+Agent 1 4.715168970835399
+Agent 2 6.608054311497683
+Agent 3 11.352972189802895
+Agent 4 4.73293097612581
+Agent 5 -0.5921632275778954
+Agent 6 11.314311977938015
+Agent 7 4.172459054396297
+Agent 8 -0.29540754638153466
+Policies
+Agent 0 running CVM
+Agent 1 running CVM
+Agent 2 running CVM
+Agent 3 running CVM
+Agent 4 running CVM
+Agent 5 running CVM
+Agent 6 running CVM
+Agent 7 running CVM
+Agent 8 running CVM

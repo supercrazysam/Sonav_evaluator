@@ -1,0 +1,92 @@
+number of agents: 20
+steps: 31
+***************Arrival=
+1
+Collision=
+19
+Timeout=
+0
+***************STATUS during the end
+Agent 0 COLLISION
+Agent 1 COLLISION
+Agent 2 COLLISION
+Agent 3 COLLISION
+Agent 4 COLLISION
+Agent 5 COLLISION
+Agent 6 COLLISION
+Agent 7 COLLISION
+Agent 8 COLLISION
+Agent 9 ARRIVED
+Agent 10 COLLISION
+Agent 11 COLLISION
+Agent 12 COLLISION
+Agent 13 COLLISION
+Agent 14 COLLISION
+Agent 15 COLLISION
+Agent 16 COLLISION
+Agent 17 COLLISION
+Agent 18 COLLISION
+Agent 19 COLLISION
+times_to_goal
+Agent 0 3.1000000000000014
+Agent 1 3.1000000000000014
+Agent 2 3.1000000000000014
+Agent 3 3.1000000000000014
+Agent 4 3.1000000000000014
+Agent 5 3.1000000000000014
+Agent 6 3.1000000000000014
+Agent 7 3.1000000000000014
+Agent 8 3.1000000000000014
+Agent 9 3.1000000000000014
+Agent 10 3.1000000000000014
+Agent 11 3.1000000000000014
+Agent 12 3.1000000000000014
+Agent 13 3.1000000000000014
+Agent 14 3.1000000000000014
+Agent 15 3.1000000000000014
+Agent 16 3.1000000000000014
+Agent 17 3.1000000000000014
+Agent 18 3.1000000000000014
+Agent 19 3.1000000000000014
+extra_time_to_goal
+Agent 0 -1.8327673689035944
+Agent 1 -1.139254650311142
+Agent 2 0.14671533735049147
+Agent 3 -0.6936503854412641
+Agent 4 0.8312575601021348
+Agent 5 -1.1683950715448246
+Agent 6 -0.9731624453787617
+Agent 7 -1.0588625596006445
+Agent 8 -0.745752648222032
+Agent 9 0.10708942998292414
+Agent 10 -1.79393845123648
+Agent 11 0.9397624179493551
+Agent 12 0.8424250989139179
+Agent 13 -1.3942658903031182
+Agent 14 -0.3358024489912421
+Agent 15 -1.3968016924904338
+Agent 16 -0.1796200484872208
+Agent 17 -0.49530881476316946
+Agent 18 -0.44890760874333235
+Agent 19 -0.5834397433496741
+Policies
+Agent 0 running NonCooperativePolicy
+Agent 1 running NonCooperativePolicy
+Agent 2 running NonCooperativePolicy
+Agent 3 running NonCooperativePolicy
+Agent 4 running NonCooperativePolicy
+Agent 5 running NonCooperativePolicy
+Agent 6 running NonCooperativePolicy
+Agent 7 running NonCooperativePolicy
+Agent 8 running NonCooperativePolicy
+Agent 9 running NonCooperativePolicy
+Agent 10 running NonCooperativePolicy
+Agent 11 running NonCooperativePolicy
+Agent 12 running NonCooperativePolicy
+Agent 13 running NonCooperativePolicy
+Agent 14 running NonCooperativePolicy
+Agent 15 running NonCooperativePolicy
+Agent 16 running NonCooperativePolicy
+Agent 17 running NonCooperativePolicy
+Agent 18 running NonCooperativePolicy
+Agent 19 running NonCooperativePolicy

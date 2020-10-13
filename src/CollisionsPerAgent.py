@@ -60,12 +60,31 @@ class CollisionsPerAgent(EvaluationMetric):
         dist = np.linalg.norm(np.asmatrix(agent_1.state) - np.asmatrix(agent_2.state))
         return dist <= self.collision_radius, dist
 
-    def write_out(self, agents):
+    def write_out(self, agents, logdir=None):
         collision_list = np.asarray(list(self.collisions_per_agent.values()))
         total_agents = collision_list.size
         self.total_collisions = np.sum(collision_list) / 2
-        return {'Total Collisions@%f m' % self.collision_radius: self.total_collisions,
-                'Mean Collisions@%f m' % self.collision_radius: float(self.total_collisions) / total_agents,
+
+        #Start Overriding
+        try:
+            log = np.load(  logdir )
+            arrival_rate    = log['arrival_count']   / log['num_agents']
+            collision_rate  = log['collision_count'] / log['num_agents']
+            timeout_rate    = 1 - arrival_rate - collision_rate
+        except:
+            print("[Skipped] failed to open the npz file, probably error or it is real dataset.")
+            arrival_rate = 0
+            collision_rate = 0
+            timeout_rate = 0
+
+        
+        
+        return {
+                'Arrival Rate':   arrival_rate,
+                'Collision Rate': collision_rate,
+                'Timeout Rate': timeout_rate,
+                #'Total Collisions@%f m' % self.collision_radius: self.total_collisions,
+                #'Mean Collisions@%f m' % self.collision_radius: float(self.total_collisions) / total_agents,
   
                 #'StdDev Collisions@%f m' % self.collision_radius: np.std(collision_list),
                 #'Max Collisions@%f m' % self.collision_radius: np.max(collision_list),

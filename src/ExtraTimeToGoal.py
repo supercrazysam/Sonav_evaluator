@@ -33,14 +33,14 @@ class ExtraTimeToGoal(EvaluationMetric):
 
     def set_extra_time_to_goal(self, agent_id):
         agent = self.agents[agent_id]
-        agent_path_time = agent.get_latest_trajectory_time()        
-        straight_path_time = agent.get_latest_straight_path_time() 
+        agent_path_time = agent.get_latest_trajectory_time()         #actual time
+        straight_path_time = agent.get_latest_straight_path_time()  #nominal time  #caculate (goal - start) / nominal speed
         extra_time = agent_path_time - straight_path_time
         self.extra_time_to_goal_dict[agent_id] = extra_time
 
-        ideal_straight_path_time = agent.get_latest_straight_path_time() 
+        ideal_straight_path_time = agent.get_latest_straight_path_time(1) #use(1) nominal time if it follows 1 m/s speed setting (especially in population)
 
-        self.time_efficiency_dict[agent_id] = ideal_straight_path_time /  (agent_path_time+0.0000001) 
+        self.time_efficiency_dict[agent_id] = ideal_straight_path_time /  (agent_path_time+0.0000001) #latest nominal time / latest actual time   
 
     def set_path_efficiency(self, agent_id):
         path_efficiency = self.agents[agent_id].get_path_efficiency()
@@ -86,13 +86,13 @@ class ExtraTimeToGoal(EvaluationMetric):
                 #'Mean Extra Time to Goal (s)_Scatter': self.extra_time_to_goal_dict,
                 'Mean Path Efficiency': self.average_path_efficiency,
                 'StdDev Path Efficiency': self.std_dev_path_efficiency,
-                #'Max Path Efficiency': self.max_path_efficiency,
-                #'Min Path Efficiency': self.min_path_efficiency,
+                'Max Path Efficiency': self.max_path_efficiency,
+                'Min Path Efficiency': self.min_path_efficiency} #,
                 #'Mean Path Efficiency_Scatter': self.path_efficiency_dict,
 
-                'Mean Time Efficiency': self.average_time_efficiency,
-                'StdDev Time Efficiency': self.std_dev_time_efficiency}
+                #'Mean Time Efficiency': self.average_time_efficiency,
+                #'StdDev Time Efficiency': self.std_dev_time_efficiency,
                 #'Max Time Efficiency': self.max_time_efficiency,
-                #'Min Time Efficiency': self.min_time_efficiency, 
+                #'Min Time Efficiency': self.min_time_efficiency} 
                 #'Mean Time Efficiency_Scatter': self.time_efficiency_dict}#added
 
